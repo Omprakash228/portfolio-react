@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+::-moz-selection {
+  background: #00bfbf;
+  color: #fafafa;
+  text-shadow: none;
+}
+::selection {
+  background: #00bfbf;
+  color: #fafafa;
+  text-shadow: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  transition: all 0.5s ease;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  max-width: 350px;
+  text-wrap: nowrap;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(100px);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.tooltip .tooltiptext-left {
+  position: absolute;
+  z-index: 1000;
+  left: 60px;
+  top: calc(50% - 15px);
+}
+
+.tooltip .tooltiptext-right {
+  position: absolute;
+  z-index: 1000;
+  right: 60px;
+  top: calc(50% - 10px);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.section-title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.card-title {
+  font-family: "Roboto Mono", "monospace";
+}
+
+.card {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(100px);
+  padding: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  gap: 2%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    margin: 20px 65px;
+  }
+}

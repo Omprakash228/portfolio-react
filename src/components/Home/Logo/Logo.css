@@ -1,0 +1,23 @@
+.logo-ctr {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
+#logo {
+  background: url("/public/logo.png");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .logo-ctr {
+    left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
