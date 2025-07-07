@@ -113,6 +113,11 @@ export const ThreeProjects = () => {
       alter: "Chess",
       thumbnail: 'chess/chess_thumbnail.webp'
     },
+    {
+      id: 18,
+      alter: "FloatingHouses",
+      thumbnail: 'floatinghouses/floatinghouses_thumbnail.webp'
+    }
   ];
 
   const imageMap: ImageMap = {
@@ -183,6 +188,10 @@ export const ThreeProjects = () => {
     Chess: {
       solid: 'chess/chess_solid.webp',
       render: 'chess/chess_render.webp'
+    },
+    FloatingHouses: {
+      solid: 'floatinghouses/floatinghouses_solid.webp',
+      render: 'floatinghouses/floatinghouses_render.webp'
     }
   };
 
