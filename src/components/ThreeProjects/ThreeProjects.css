@@ -10,17 +10,18 @@
   backdrop-filter: blur(100px);
   padding: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  gap: 1%;
 }
 
 .img-card {
   width: 24.2%;
   min-width: 100px;
   cursor: pointer;
+  margin: 5px;
 }
 
 .img-card > img {
   width: 100%;
+  vertical-align: middle;
 }
 
 .modal-container {

@@ -53,7 +53,7 @@ body {
 
 .tooltip .tooltiptext-left {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   left: 60px;
   top: calc(50% - 15px);
 }

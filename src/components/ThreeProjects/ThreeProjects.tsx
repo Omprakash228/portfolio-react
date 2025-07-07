@@ -83,6 +83,36 @@ export const ThreeProjects = () => {
       alter: "Pencilballet",
       thumbnail: 'pencilballet/pencilballet_thumbnail.webp'
     },
+    {
+      id: 12,
+      alter: "WallE",
+      thumbnail: 'walle/walle_thumbnail.webp'
+    },
+    {
+      id: 13,
+      alter: "Robin",
+      thumbnail: 'robin/robin_thumbnail.webp'
+    },
+    {
+      id: 14,
+      alter: "Windmill",
+      thumbnail: 'windmill/windmill_thumbnail.webp'
+    },
+    {
+      id: 15,
+      alter: "Radio",
+      thumbnail: 'radio/radio_thumbnail.webp'
+    },
+    {
+      id: 16,
+      alter: "Halloween",
+      thumbnail: 'halloween/halloween_thumbnail.webp'
+    },
+    {
+      id: 17,
+      alter: "Chess",
+      thumbnail: 'chess/chess_thumbnail.webp'
+    },
   ];
 
   const imageMap: ImageMap = {
@@ -129,6 +159,30 @@ export const ThreeProjects = () => {
     Pencilballet: {
       solid: 'pencilballet/pencilballet_solid.webp',
       render: 'pencilballet/pencilballet_render.webp'
+    },
+    WallE: {
+      solid: 'walle/walle_solid.webp',
+      render: 'walle/walle_render.webp'
+    },
+    Robin: {
+      solid: 'robin/robin_solid.webp',
+      render: 'robin/robin_render.webp'
+    },
+    Windmill: {
+      solid: 'windmill/windmill_solid.webp',
+      render: 'windmill/windmill_render.webp'
+    },
+    Radio: {
+      solid: 'radio/radio_solid.webp',
+      render: 'radio/radio_render.webp'
+    },
+    Halloween: {
+      solid: 'halloween/halloween_solid.webp',
+      render: 'halloween/halloween_render.webp'
+    },
+    Chess: {
+      solid: 'chess/chess_solid.webp',
+      render: 'chess/chess_render.webp'
     }
   };
 
