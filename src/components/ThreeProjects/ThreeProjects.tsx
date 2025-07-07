@@ -57,7 +57,32 @@ export const ThreeProjects = () => {
       id: 6,
       alter: "Guitar",
       thumbnail: 'guitar/guitar_thumbnail.webp'
-    }
+    },
+    {
+      id: 7,
+      alter: "Mjolnir",
+      thumbnail: 'mjolnir/mjolnir_thumbnail.webp'
+    },
+    {
+      id: 8,
+      alter: "Bells",
+      thumbnail: 'bells/bells_thumbnail.webp'
+    },
+    {
+      id: 9,
+      alter: "Snooker",
+      thumbnail: 'snooker/snooker_thumbnail.webp'
+    },
+    {
+      id: 10,
+      alter: "Paperboat",
+      thumbnail: 'paperboat/paperboat_thumbnail.webp'
+    },
+    {
+      id: 11,
+      alter: "Pencilballet",
+      thumbnail: 'pencilballet/pencilballet_thumbnail.webp'
+    },
   ];
 
   const imageMap: ImageMap = {
@@ -84,6 +109,26 @@ export const ThreeProjects = () => {
     Guitar: {
       solid: 'guitar/guitar_solid.webp',
       render: 'guitar/guitar_render.webp',
+    },
+    Mjolnir: {
+      solid: 'mjolnir/mjolnir_solid.webp',
+      render: 'mjolnir/mjolnir_render.webp',
+    },
+    Bells: {
+      solid: 'bells/bells_solid.webp',
+      render: 'bells/bells_render.webp',
+    },
+    Snooker: {
+      solid: 'snooker/snooker_solid.webp',
+      render: 'snooker/snooker_render.webp',
+    },
+    Paperboat: {
+      solid: 'paperboat/paperboat_solid.webp',
+      render: 'paperboat/paperboat_render.webp'
+    },
+    Pencilballet: {
+      solid: 'pencilballet/pencilballet_solid.webp',
+      render: 'pencilballet/pencilballet_render.webp'
     }
   };
 

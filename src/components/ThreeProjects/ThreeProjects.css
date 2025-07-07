@@ -78,7 +78,15 @@
 }
 
 .slider {
-  max-width: 90vw;
+  width: auto;
+  height: 90%;
+}
+
+@media (max-width: 900px) {
+  .slider {
+    width: 90%;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {

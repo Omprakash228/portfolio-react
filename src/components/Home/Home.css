@@ -16,6 +16,7 @@
 
 .jobs {
   font-size: 4.5rem;
+  padding-bottom: 10%;
 }
 
 @media (max-width: 1024px) {
@@ -25,6 +26,7 @@
 
   .jobs {
     font-size: 3.8rem;
+    padding-bottom: 15%!important;
   }
 
   .name {
@@ -39,6 +41,7 @@
 
   .jobs {
     font-size: 1.8rem;
+    padding-bottom: 20%!important;
   }
 
   .name {
