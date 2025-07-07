@@ -25,9 +25,9 @@ export const Sphere = () => {
 
     useFrame((state) => {
         if (!sphereRef.current) return;
-        sphereRef.current.rotation.z = x.get() / 2;
-        sphereRef.current.rotation.y = y.get() / 2;
-        sphereRef.current.rotation.x += 0.0005;
+        sphereRef.current.rotation.x = y.get() / 2;
+        sphereRef.current.rotation.y = x.get() / 2;
+        sphereRef.current.rotation.z += 0.0005;
 
         uniforms.time.value = state.clock.getElapsedTime();
     })
