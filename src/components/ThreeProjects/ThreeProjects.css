@@ -90,6 +90,10 @@
   height: 90%;
 }
 
+.slider > div {
+  left: 1px!important;
+}
+
 @media (max-width: 900px) {
   .slider {
     width: 90%;
