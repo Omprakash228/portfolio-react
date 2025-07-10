@@ -210,6 +210,7 @@ export const ThreeProjects = () => {
       {modalVisibility ? (
 
         <div className="modal-container">
+          <div className="overlay" onClick={() => hideModal()}></div>
           <div className="icon-ctr" onClick={() => hideModal()}>
             <MdClose className="close-icon" size={"22px"} />
           </div>
