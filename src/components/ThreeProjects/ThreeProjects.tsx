@@ -8,7 +8,7 @@ import "./ThreeProjects.css";
 import { MdClose } from "react-icons/md";
 
 export type Project = {
-  id: number;
+  id: string;
   alter: string;
   thumbnail: string;
 }
@@ -29,98 +29,107 @@ export const ThreeProjects = () => {
 
   const projects: Project[] = [
     {
-      id: 1,
+      id: "445ea9d3-d0b3-4f2e-a9d7-ee54ad01f2f4",
+      alter: "Clock",
+      thumbnail: 'clock/clock_thumbnail.webp',
+    },
+    {
+      id: "a60b07ec-57b1-4df5-87d2-59b22fd02446",
       alter: "Bug",
       thumbnail: 'bug/bug_thumbnail.webp',
     },
     {
-      id: 2,
+      id: "96eccd6f-97ac-4f19-b7ec-33df9a23d225",
       alter: "Captain America",
       thumbnail: 'ca/ca_thumbnail.webp'
     },
     {
-      id: 3,
+      id: "8bac0a18-39bb-4cdd-a85e-0d40529f92f1",
       alter: "Rolex",
       thumbnail: 'rolex/rolex_thumbnail.webp'
     },
     {
-      id: 4,
+      id: "007c3d68-176d-45b3-94d5-601ffe391266",
       alter: "Newton Cradle",
       thumbnail: 'newtoncradle/newtoncradle_thumbnail.webp'
     },
     {
-      id: 5,
+      id: "bfdbe39b-89fd-4bc9-9412-ae17dd6759eb",
       alter: "Kinetic Toy",
       thumbnail: 'kinetictoy/kinetictoy_thumbnail.webp'
     },
     {
-      id: 6,
+      id: "15458c0a-c8bf-4267-9e8f-9663afcb62f5",
       alter: "Guitar",
       thumbnail: 'guitar/guitar_thumbnail.webp'
     },
     {
-      id: 7,
+      id: "0f27c39c-91f0-432c-8bd5-603905128943",
       alter: "Mjolnir",
       thumbnail: 'mjolnir/mjolnir_thumbnail.webp'
     },
     {
-      id: 8,
+      id: "fb81f3a4-73a6-454d-a964-a82dcc305f11",
       alter: "Bells",
       thumbnail: 'bells/bells_thumbnail.webp'
     },
     {
-      id: 9,
+      id: "2b3bec6c-0049-41e2-8721-ae5b720df392",
       alter: "Snooker",
       thumbnail: 'snooker/snooker_thumbnail.webp'
     },
     {
-      id: 10,
+      id: "d9e5921d-bc2a-484c-a3a0-41f84625c634",
       alter: "Paperboat",
       thumbnail: 'paperboat/paperboat_thumbnail.webp'
     },
     {
-      id: 11,
+      id: "978417ae-8f77-40fe-bf9b-4b3a2c594142",
       alter: "Pencilballet",
       thumbnail: 'pencilballet/pencilballet_thumbnail.webp'
     },
     {
-      id: 12,
+      id: "245a1895-7131-4cb7-a6eb-880f8aa39da4",
       alter: "WallE",
       thumbnail: 'walle/walle_thumbnail.webp'
     },
     {
-      id: 13,
+      id: "1e9f54b1-1b08-456d-964d-70e7caaeabc5",
       alter: "Robin",
       thumbnail: 'robin/robin_thumbnail.webp'
     },
     {
-      id: 14,
+      id: "9b2490a8-17d2-4a09-b4fb-b85bd1e82335",
       alter: "Windmill",
       thumbnail: 'windmill/windmill_thumbnail.webp'
     },
     {
-      id: 15,
+      id: "06d2c696-db98-476e-a2b6-85cab13e4506",
       alter: "Radio",
       thumbnail: 'radio/radio_thumbnail.webp'
     },
     {
-      id: 16,
+      id: "52c5bcd6-f390-43ec-a6ec-7363ddc1a142",
       alter: "Halloween",
       thumbnail: 'halloween/halloween_thumbnail.webp'
     },
     {
-      id: 17,
+      id: "874fa2eb-60ee-449a-aacb-8b0f58d09ced",
       alter: "Chess",
       thumbnail: 'chess/chess_thumbnail.webp'
     },
     {
-      id: 18,
+      id: "3bdbddfe-e3dc-4a2a-92b8-60d61d076b63",
       alter: "FloatingHouses",
       thumbnail: 'floatinghouses/floatinghouses_thumbnail.webp'
     }
   ];
 
   const imageMap: ImageMap = {
+    Clock: {
+      solid: 'clock/clock_solid.webp',
+      render: 'clock/clock_render.webp'
+    },
     Bug: {
       solid: 'bug/bug_solid.webp',
       render: 'bug/bug_render.webp',
