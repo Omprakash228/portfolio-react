@@ -85,12 +85,12 @@ body {
 .card {
   width: 80%;
   margin: 20px auto;
+  padding: 30px 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 10px;
   backdrop-filter: blur(100px);
-  padding: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   gap: 2%;
 }

@@ -6,14 +6,17 @@ export const SideNav = () => {
             <a href="#">
                 Home
             </a>
+            <a href="#about">
+                About
+            </a>
+            <a href="#experience">
+                Experience
+            </a>
             <a href="#web-projects">
                 Web Projects
             </a>
             <a href="#3d-projects">
                 3D Projects
-            </a>
-            <a href="#about">
-                About
             </a>
         </nav>
     );

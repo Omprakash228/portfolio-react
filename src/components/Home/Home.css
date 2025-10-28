@@ -19,6 +19,11 @@
   padding-bottom: 10%;
 }
 
+.side-ctr {
+  height: 100vh;
+  max-height: 700px;
+}
+
 @media (max-width: 1024px) {
   .main-content {
     padding-left: 150px;

@@ -1,0 +1,23 @@
+.work-card {
+    display: block;
+}
+
+.work-experience {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.work-title-ctr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company, .duration {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.work-description {
+    margin: 0.5rem 0 0.5rem 1rem;
+    font-weight: 300;
+}

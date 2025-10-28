@@ -1,36 +1,39 @@
 import "./About.css";
 import { TextDecrypt } from "../../shared/TextDecrypt";
 
-
 export const About = () => {
-    const greetings = "Hello there!";
-    const aboutme = `I'm Omprakash Narayanan Lakshmanan, a full-stack software developer with over 6 years of professional experience building robust, scalable, and cloud-native applications. 
-  I specialize in creating clean, high-performance web solutions and also have a strong creative side — I develop interactive 3D experiences for the web and create 3D assets in Blender as a hobby. 
-  I have professional experience in the following technologies.
+  const greetings = "Hello there!";
+  const intro = `I’m a full-stack software engineer with 6+ years of experience building scalable, high-performance web applications. I enjoy writing efficient, maintainable software and tackling complex problems across the full stack.  I also have a strong creative side, I develop interactive 3D experiences for the web and create 3D assets in Blender as a hobby. I’m passionate about delivering production-ready applications that create real impact.`;
+  const outro = `I bring together technical depth and creative thinking, whether you're building a fast, secure web application or want to add a visually compelling 3D layer to your product. I'm detail-oriented, easy to work with, and focused on delivering solutions that are not just functional, but user-friendly.`;
 
-  <span class="bold">Languages & Frameworks</span>: .NET Core, C#, Angular, React, JavaScript, HTML/CSS
-  <span class="bold">Cloud & DevOps</span>: Azure, AWS (S3), Bicep, GitHub Actions, CI/CD
-  <span class="bold">3D & Frontend</span>: Three.js, Blender 
-
-  I bring together technical depth and creative thinking — whether you're building a fast, secure web application or want to add a visually compelling 3D layer to your product. 
-  I'm detail-oriented, easy to work with, and focused on delivering solutions that are not just functional, but user-friendly.`;
-
-    return (
-        <section id="about">
-            <h1 className="section-title">About</h1>
-            <div>
-                <div className="card">
-                    <div className="__img_wrapper">
-                        <img src={`/profile.webp`} alt='Profile' />
-                    </div>
-                    <div className="__content_wrapper">
-                        <div className="title card-title">
-                            <TextDecrypt text={`${greetings}`} />
-                        </div>
-                        <p className="aboutme" dangerouslySetInnerHTML={{__html: aboutme}}></p>
-                    </div>
-                </div>
+  return (
+    <section id="about">
+      <h1 className="section-title">About</h1>
+      <div>
+        <div className="card">
+          <div className="__img_wrapper">
+            <img src={`/profile.webp`} alt="Profile" />
+          </div>
+          <div className="__content_wrapper">
+            <div className="title card-title">
+              <TextDecrypt text={`${greetings}`} />
             </div>
-        </section>
-    );
+            <div className="aboutme">
+              <p>{intro}</p>
+              <p>{outro}</p>
+              <div className="skills">
+                <div className="skill-header">Skills</div>
+                <div><span className="bold">Languages</span>: JavaScript, TypeScript, C#, GraphQL, SQL, C++</div>
+                <div><span className="bold">Frameworks</span>: Angular, .NET Core, Entity Framework, Node.js</div>
+                <div><span className="bold">DevOps and Cloud</span>: Microsoft Azure, Bicep, AWS, Docker, Github Actions</div>
+                <div><span className="bold">Databases</span>: Microsoft SQL Servicer, Azure Cosmos DB</div>
+                <div><span className="bold">Concepts</span>: REST APIs, Microservices, Scalable architecture, State management, Infrastructure as Code(IaC)</div>
+                <div><span className="bold">3D</span>: Three.js, Blender</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };

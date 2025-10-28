@@ -1,12 +1,12 @@
 .__img_wrapper {
-  width: 49%;
+  width: 39%;
   max-width: 50em;
 }
 .__img_wrapper > img {
   width: 100%;
 }
 .__content_wrapper {
-  width: 49%;
+  width: 59%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -21,7 +21,7 @@
 .tech {
   font-size: 1rem;
   font-weight: 300;
-  width: 60%;
+  width: 75%;
 }
 .links {
   font-size: 1rem;
