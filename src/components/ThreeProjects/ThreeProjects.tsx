@@ -237,7 +237,6 @@ export const ThreeProjects = () => {
         </div>
       ) : null}
       <h1 className="section-title">3D Projects</h1>
-      <h6 style={{textAlign:"center"}}>(click on image to expand)</h6>
       <div className="three-main">
         <div className="img-ctr">
           {projects.map((project) => (
@@ -246,7 +245,7 @@ export const ThreeProjects = () => {
               key={project.id}
               onClick={() => showModal(project.alter)}
             >
-              <img src={`/threeprojects/${project.thumbnail}`} alt={project.alter} />
+              <img className="img-thumbnail" src={`/threeprojects/${project.thumbnail}`} alt={project.alter} />
             </div>
           ))}
         </div>
