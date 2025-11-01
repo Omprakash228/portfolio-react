@@ -77,7 +77,7 @@ export const WebProjects = () => {
     <section id="web-projects">
       <h1 className="section-title">Web Projects</h1>
       <div>
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <div className="card project-card" key={project.id}>
             <div className="__img_wrapper">
               <img
