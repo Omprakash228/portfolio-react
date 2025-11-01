@@ -5,6 +5,7 @@ nav {
   transform: rotate(-90deg) translate3d(-50%,0,0);
   top: 15%;
   left: -9.25rem;
+  z-index: 500;
 }
 nav a {
   margin-right: 20px;

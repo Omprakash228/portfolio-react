@@ -1,6 +1,25 @@
+import { useGSAP } from "@gsap/react";
 import "./Experience.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 export const Experience = () => {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('#experience', {
+      scrollTrigger: {
+        trigger: '.work-card',
+        toggleActions: 'restart none none none',
+        start: 'top bottom',
+      },
+      x: 100,
+      opacity: 0,
+      duration: 0.5,
+      ease: 'power1.out',
+    })
+  }, []);
+  
   return (
     <>
       <section id="experience">

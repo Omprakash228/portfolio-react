@@ -6,6 +6,9 @@ import {
 
 import "./ThreeProjects.css";
 import { MdClose } from "react-icons/md";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 export type Project = {
   id: string;
@@ -26,6 +29,25 @@ export type ImageMap = {
 export const ThreeProjects = () => {
   const [model, setModel] = useState<{ solid: string, render: string } | null>(null);
   const [modalVisibility, setModalVisibility] = useState(false);
+
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const cards = document.querySelectorAll(".img-card");
+
+    cards.forEach((card) => {
+      gsap.from(card, {
+        scrollTrigger: {
+          trigger: card,
+          toggleActions: "restart none none none",
+          start: "top bottom",
+        },
+        y: -100,
+        opacity: 0,
+        duration: 0.5,
+        ease: "power1.out",
+      });
+    });
+  }, []);
 
   const projects: Project[] = [
     {
