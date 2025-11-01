@@ -13,7 +13,7 @@ export const Experience = () => {
         toggleActions: 'restart none none none',
         start: 'top bottom',
       },
-      x: 100,
+      x: -100,
       opacity: 0,
       duration: 0.5,
       ease: 'power1.out',

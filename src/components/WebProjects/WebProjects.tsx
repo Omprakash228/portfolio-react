@@ -9,14 +9,14 @@ export const WebProjects = () => {
     gsap.registerPlugin(ScrollTrigger);
     const cards = document.querySelectorAll(".project-card");
 
-    cards.forEach((card, index) => {
+    cards.forEach((card) => {
       gsap.from(card, {
         scrollTrigger: {
           trigger: card,
           toggleActions: "restart none none none",
           start: "top bottom",
         },
-        x: index % 2 === 0 ? -100 : 100,
+        x: -100,
         opacity: 0,
         duration: 0.5,
         ease: "power1.out",

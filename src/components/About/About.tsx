@@ -12,7 +12,7 @@ export const About = () => {
       scrollTrigger: {
         trigger: '#about-card',
         toggleActions: 'restart none none none',
-        start: 'top bottom',
+        start: 'top+=25% bottom',
       },
       x: -100,
       opacity: 0,
