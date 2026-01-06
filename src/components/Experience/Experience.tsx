@@ -3,63 +3,155 @@ import "./Experience.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
+interface TimelineItem {
+  id: string;
+  type: "education" | "work";
+  title: string;
+  organization: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  details: string[];
+  gpa?: string;
+}
+
 export const Experience = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from('#experience', {
-      scrollTrigger: {
-        trigger: '.work-card',
-        toggleActions: 'restart none none none',
-        start: 'top bottom',
-      },
-      x: -100,
-      opacity: 0,
-      duration: 0.5,
-      ease: 'power1.out',
-    })
+    const timelineItems = document.querySelectorAll(".timeline-item");
+    
+    timelineItems.forEach((item) => {
+      const isMobile = window.innerWidth <= 768;
+      const isLeft = item.classList.contains("timeline-item-left");
+      
+      gsap.from(item, {
+        scrollTrigger: {
+          trigger: item,
+          toggleActions: "restart none none none",
+          start: "top 80%",
+        },
+        x: isMobile ? -30 : (isLeft ? -50 : 50),
+        opacity: 0,
+        duration: 0.6,
+        ease: "power1.out",
+      });
+    });
+
+    // Re-run animations on window resize for responsive behavior
+    const handleResize = () => {
+      ScrollTrigger.refresh();
+    };
+    
+    window.addEventListener("resize", handleResize);
+    
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
-  
+
+  const timelineData: TimelineItem[] = [
+    {
+      id: "work-3",
+      type: "work",
+      title: "Software Engineer II",
+      organization: "Medpace",
+      location: "Cincinnati, OH",
+      startDate: "Jul 2023",
+      endDate: "Oct 2025",
+      details: [
+        "Built scalable .NET Core applications on Azure, leveraging Cosmos DB to streamline data collection. Collaborated across teams throughout the full SDLC, delivering production-ready solutions.",
+      ],
+    },
+    {
+      id: "edu-2",
+      type: "education",
+      title: "Master of Science in Computer Science",
+      organization: "Purdue University",
+      location: "Fort Wayne",
+      startDate: "Jan 2022",
+      endDate: "May 2023",
+      details: [
+        "Coursework: Software Engineering, Heuristic Problem Solving, Algorithm Design and Implementation, Machine Learning, Computer Vision, Cryptography, Software Testing.",
+      ],
+      gpa: "4.0/4.0",
+    },
+    {
+      id: "work-2",
+      type: "work",
+      title: "Senior Software Developer",
+      organization: "Propel Technology Group Inc.",
+      location: "Chennai, India",
+      startDate: "July 2020",
+      endDate: "December 2021",
+      details: [
+        "Built RESTful APIs and Microservices using .NET Core and GraphQL, maintained front-end code, and implemented secure file upload and two-factor authentication features. Led code reviews and improved client-side application flexibility.",
+      ],
+    },
+    {
+      id: "work-1",
+      type: "work",
+      title: "Software Engineer",
+      organization: "Orion Innovation",
+      location: "Chennai, India",
+      startDate: "June 2017",
+      endDate: "May 2020",
+      details: [
+        "Developed and maintained a responsive Angular web application, optimized performance using AOT compilation and lazy loading, and integrated security features. Mentored junior developers, improving team skill levels and code quality.",
+      ],
+    },
+    {
+      id: "edu-1",
+      type: "education",
+      title: "Bachelor's in Electronics and Communication Engineering",
+      organization: "Anna University",
+      location: "Chennai",
+      startDate: "Aug 2013",
+      endDate: "May 2017",
+      details: [],
+      gpa: "8.29/10",
+    },
+  ];
+
   return (
-    <>
-      <section id="experience">
-        <h1 className="section-title">Experience</h1>
-        <div>
-          <div className="card work-card">
-            <div className="work-experience">
-              <div className="work-title-ctr">
-                <div className="work-title">Software Engineer II</div>
-                <div className="company"><span className="bold">Medpace</span> - Cincinnati, OH</div>
-              </div>
-              <div className="duration">Jul 2023 - Oct 2025</div>
-              <div className="work-description">
-                <li>Built scalable .NET Core applications on Azure, leveraging Cosmos DB to streamline data collection. Collaborated across teams throughout the full SDLC, delivering production-ready solutions.</li>
+    <section id="journey">
+      <h1 className="section-title">Career Journey</h1>
+      <div className="timeline-container">
+        <div className="timeline-wrapper">
+          <div className="timeline-line"></div>
+          {timelineData.map((item) => (
+            <div
+              key={item.id}
+              className={`timeline-item ${
+                item.type === "education" ? "timeline-item-left" : "timeline-item-right"
+              }`}
+            >
+              <div className="timeline-node"></div>
+              <div className={`timeline-content ${item.type === "education" ? "education-card" : "work-card"}`}>
+                <div className="timeline-date">
+                  {item.startDate} - {item.endDate}
+                </div>
+                <div className="timeline-title">{item.title}</div>
+                <div className="timeline-organization">
+                  <span className="bold">{item.organization}</span> - {item.location}
+                </div>
+                {item.gpa && (
+                  <div className="timeline-gpa">GPA: {item.gpa}</div>
+                )}
+                {item.details.length > 0 && (
+                  <div className="timeline-details">
+                    {item.details.map((detail, idx) => (
+                      <div key={idx} className="timeline-detail-item">
+                        {detail}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
-            <div className="work-experience">
-              <div className="work-title-ctr">
-                <div className="work-title">Senior Software Developer</div>
-                <div className="company"><span className="bold">Propel Technology Group Inc.,</span> - Chennai, India</div>
-              </div>
-              <div className="duration">July 2020 - December 2021</div>
-              <div className="work-description">
-                <li>Built RESTful APIs and Microservices using .NET Core and GraphQL, maintained front-end code, and implemented secure file upload and two-factor authentication features. Led code reviews and improved client-side application flexibility.</li>
-              </div>
-            </div>
-            <div className="work-experience">
-              <div className="work-title-ctr">
-                <div className="work-title">Software Engineer</div>
-                <div className="company"><span className="bold">Orion Innovation</span> - Chennai, India</div>
-              </div>
-              <div className="duration">June 2017 - May 2020</div>
-              <div className="work-description">
-                <li>Developed and maintained a responsive Angular web application, optimized performance using AOT compilation and lazy loading, and integrated security features. Mentored junior developers, improving team skill levels and code quality.</li>
-              </div>
-            </div>
-            
-          </div>
+          ))}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };

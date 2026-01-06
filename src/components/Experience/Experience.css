@@ -1,23 +1,253 @@
+.timeline-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.timeline-wrapper {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #00bfbf, rgba(0, 191, 191, 0.3));
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.timeline-item-left {
+  justify-content: flex-start;
+  padding-right: 10%;
+}
+
+.timeline-item-right {
+  justify-content: flex-end;
+  padding-left: 10%;
+}
+
+.timeline-node {
+  position: absolute;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00bfbf;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  transform: translateX(-50%);
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 191, 191, 0.5);
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 20px 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-card {
+  border-left: 3px solid #00bfbf;
+}
+
 .work-card {
-    display: block;
+  border-right: 3px solid #00bfbf;
 }
 
-.work-experience {
-    margin: 1rem auto;
-    width: 80%;
+.timeline-date {
+  font-size: 0.85rem;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
 }
 
-.work-title-ctr {
-    display: flex;
-    justify-content: space-between;
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #fff;
 }
 
-.company, .duration {
-    font-weight: 100;
-    font-style: italic;
+.timeline-organization {
+  font-size: 0.95rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.work-description {
-    margin: 0.5rem 0 0.5rem 1rem;
-    font-weight: 300;
+.timeline-gpa {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.timeline-details {
+  margin-top: 12px;
+}
+
+.timeline-detail-item {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 8px;
+}
+
+.timeline-detail-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .timeline-wrapper {
+    width: 75%;
+    padding: 30px 0;
+  }
+
+  .timeline-item-left {
+    padding-right: 20%;
+  }
+
+  .timeline-item-right {
+    padding-left: 20%;
+  }
+
+  .timeline-content {
+    width: 48%;
+  }
+
+  .timeline-title {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: 10px 0;
+  }
+
+  .timeline-wrapper {
+    width: 75%;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .timeline-line {
+    left: 20px;
+    width: 2px;
+  }
+
+  .timeline-item {
+    margin-bottom: 40px;
+    padding-left: 50px !important;
+    padding-right: 0 !important;
+    justify-content: flex-start !important;
+  }
+
+  .timeline-node {
+    left: 20px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-content {
+    width: 100%;
+    padding: 18px 20px;
+    border-left: 3px solid #00bfbf !important;
+    border-right: none !important;
+  }
+
+  .timeline-date {
+    font-size: 0.8rem;
+  }
+
+  .timeline-title {
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+  }
+
+  .timeline-organization {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+
+  .timeline-gpa {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  .timeline-detail-item {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+  .timeline-wrapper {
+    width: 90%;
+    padding: 15px 0;
+  }
+
+  .timeline-line {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 40px !important;
+    margin-bottom: 35px;
+  }
+
+  .timeline-node {
+    left: 15px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-content {
+    padding: 15px 18px;
+  }
+
+  .timeline-date {
+    font-size: 0.75rem;
+  }
+
+  .timeline-title {
+    font-size: 1rem;
+  }
+
+  .timeline-organization {
+    font-size: 0.8rem;
+  }
+
+  .timeline-gpa {
+    font-size: 0.8rem;
+  }
+
+  .timeline-detail-item {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
 }

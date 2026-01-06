@@ -4,7 +4,7 @@ nav {
   flex-direction: row-reverse;
   transform: rotate(-90deg) translate3d(-50%,0,0);
   top: 15%;
-  left: -9.25rem;
+  left: -10.25rem;
   z-index: 500;
 }
 nav a {
@@ -23,6 +23,6 @@ nav a.active {
 
 @media (max-width: 1024px) {
   nav {
-    left: -11.5rem;
+    left: -12.5rem;
   }
 }

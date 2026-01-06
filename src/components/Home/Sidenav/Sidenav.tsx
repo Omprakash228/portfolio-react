@@ -21,8 +21,8 @@ export const SideNav = () => {
             <a href="#about">
                 About
             </a>
-            <a href="#experience">
-                Experience
+            <a href="#journey">
+                Career Journey
             </a>
             <a href="#web-projects">
                 Web Projects

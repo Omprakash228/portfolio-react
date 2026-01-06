@@ -38,7 +38,7 @@ export const ThreeProjects = () => {
       gsap.from(card, {
         scrollTrigger: {
           trigger: card,
-          toggleActions: "restart none none none",
+          toggleActions: "play none none none",
           start: "top bottom",
         },
         y: -100,

@@ -1,3 +1,35 @@
+.about-card {
+  align-items: center;
+}
+
+.about-card .__img_wrapper {
+  width: 39%;
+  max-width: 50em;
+  flex-shrink: 0;
+}
+
+.about-card .__content_wrapper {
+  width: 59%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column !important;
+  }
+
+  .about-card .__img_wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .about-card .__content_wrapper {
+    width: 100%;
+  }
+}
+
 .aboutme {
   white-space: pre-line;
   font-weight: 300;
@@ -5,9 +37,17 @@
   width: 75%;
 
   p {
-    margin: 0.5rem 0;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+  }
+
+  .bold {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
   }
 }
+
 .skill-header {
   font-weight: bold;
   margin: 0.5rem 0 0 0;
