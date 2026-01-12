@@ -3,7 +3,7 @@ import Logo from "./Logo/Logo";
 import { SideNav } from "./Sidenav/Sidenav";
 import "./Home.css";
 import { Socials } from "../Socials/Socials";
-import { Resume } from "./Resume/Resume";
+// import { Resume } from "./Resume/Resume";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Logo />
       <SideNav />
       <Socials />
-      <Resume />
+      {/* <Resume /> */}
       <div className="main-content">
         <div className="name">
           <div>Omprakash Narayanan Lakshmanan</div>
