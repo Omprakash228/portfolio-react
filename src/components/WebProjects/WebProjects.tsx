@@ -57,6 +57,16 @@ export const WebProjects = () => {
     },
     {
       id: 4,
+      title: "Sign Language Detector",
+      description: `An interactive translation tool that uses computer vision to bridge the communication gap for the hearing impaired. I engineered a real-time pipeline in Python that captures hand gestures via webcam and translates them into text using a custom-trained TensorFlow model.`,
+      alter: "Sign Language Detector",
+      imageName: "sign_language_detector.webp",
+      tech: ["Python", "TensorFlow", "Computer Vision", "OpenCV"],
+      link1: null,
+      link2: "https://github.com/Omprakash228/SignLanguageDetection",
+    },
+    {
+      id: 5,
       title: "Flappy",
       description: `A fun remake of the original Flappy Bird using p5.js, focusing on physics, timing, and arcade-style polish. 
       Great for showcasing creative coding and game logic fundamentals like gravity, collision detection, and game state management`,
