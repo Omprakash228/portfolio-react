@@ -17,9 +17,6 @@ nav a:hover {
   text-decoration: none;
   color: #ec704c;
 }
-nav a.active {
-  color: #ec704c;
-}
 
 @media (max-width: 1024px) {
   nav {
