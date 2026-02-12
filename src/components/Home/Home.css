@@ -73,7 +73,7 @@
   --line-offset: calc(var(--gap) / 2);
   --line-thickness: 1px;
   --line-color: rgba(255, 255, 255, 0.1);
-  
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--gap);
@@ -201,6 +201,10 @@
 
   .tech-name {
     font-size: 0.7rem;
+  }
+
+  .aboutme {
+    width: 100%;
   }
 
   .about-card {
