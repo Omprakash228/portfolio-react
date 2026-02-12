@@ -29,6 +29,7 @@ import {
   SiPython,
   SiBlender,
   SiInkscape,
+  SiDavinciresolve,
 } from "react-icons/si";
 import type { ComponentType } from "react";
 import { VscAzure } from "react-icons/vsc";
@@ -103,6 +104,7 @@ export default function Home() {
       title: "Creative Tools",
       items: [
         { icon: SiBlender, name: "Blender" },
+        { icon: SiDavinciresolve, name: "Davinci Resolve"},
         { icon: SiInkscape, name: "Inkscape" },
       ],
     },
