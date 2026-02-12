@@ -115,7 +115,7 @@
 @media (max-width: 768px) {
   .img-ctr {
     width: 70%;
-    margin: 20px 65px;
+    margin: 20px auto;
   }
 
   .img-card {
