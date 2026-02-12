@@ -1,5 +1,5 @@
 import './App.css'
-import { About } from './components/About/About'
+// import { About } from './components/About/About'
 import { Experience } from './components/Experience/Experience'
 import Home from './components/Home/Home'
 import { ThreeProjects } from './components/ThreeProjects/ThreeProjects'
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Home />
-      <About />
+      {/* <About /> */}
       <Experience />
       <WebProjects />
       <ThreeProjects />

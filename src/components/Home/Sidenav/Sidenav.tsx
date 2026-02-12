@@ -16,11 +16,11 @@ export const SideNav = () => {
     return (
         <nav>
             <a href="#">
-                Home
-            </a>
-            <a href="#about">
                 About
             </a>
+            {/* <a href="#about">
+                About
+            </a> */}
             <a href="#journey">
                 Career Journey
             </a>

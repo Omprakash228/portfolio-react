@@ -16,7 +16,7 @@ export const Socials = () => {
           target="_blank"
         >
           <MdEmail
-            size={"22px"}
+            className="icon"
             style={{ alignSelf: "center", verticalAlign: "middle" }}
           />
         </a>
@@ -29,7 +29,7 @@ export const Socials = () => {
           target="_blank"
         >
           <PiLinkedinLogoFill
-            size={"22px"}
+            className="icon"
             style={{ alignSelf: "center", verticalAlign: "middle" }}
           />
         </a>
@@ -42,7 +42,7 @@ export const Socials = () => {
           target="_blank"
         >
           <PiGithubLogoFill
-            size={"22px"}
+            className="icon"
             style={{ alignSelf: "center", verticalAlign: "middle" }}
           />
         </a>
@@ -51,7 +51,7 @@ export const Socials = () => {
         <div className="tooltiptext tooltiptext-right">Resume</div>
         <a className="link" href="/CV_Omprakash.pdf" target="_blank">
           <FaFileAlt
-            size={"22px"}
+            className="icon"
             style={{ alignSelf: "center", verticalAlign: "middle" }}
           />
         </a>

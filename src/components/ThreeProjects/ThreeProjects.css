@@ -13,6 +13,7 @@
 }
 
 .img-card {
+  flex-grow: 2;
   width: calc(25% - 10px);
   min-width: 90px;
   cursor: pointer;
