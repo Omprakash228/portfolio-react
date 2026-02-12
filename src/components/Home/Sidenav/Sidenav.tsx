@@ -30,6 +30,9 @@ export const SideNav = () => {
             <a href="#3d-projects">
                 3D Projects
             </a>
+            <a href="#contact">
+                Contact
+            </a>
         </nav>
     );
 };

@@ -27,6 +27,8 @@ import {
   SiMongodb,
   SiNgrx,
   SiPython,
+  SiBlender,
+  SiInkscape,
 } from "react-icons/si";
 import type { ComponentType } from "react";
 import { VscAzure } from "react-icons/vsc";
@@ -95,6 +97,13 @@ export default function Home() {
         { icon: DiDatabase, name: "Azure Cosmos DB" },
         { icon: SiRedis, name: "Redis" },
         { icon: SiMongodb, name: "MongoDB" },
+      ],
+    },
+    {
+      title: "Creative Tools",
+      items: [
+        { icon: SiBlender, name: "Blender" },
+        { icon: SiInkscape, name: "Inkscape" },
       ],
     },
   ];

@@ -4,7 +4,7 @@ nav {
   flex-direction: row-reverse;
   transform: rotate(-90deg) translate3d(-50%,0,0);
   top: 50px;
-  left: -9.25rem;
+  left: -11.25rem;
   z-index: 500;
 }
 nav a {
@@ -20,6 +20,6 @@ nav a:hover {
 
 @media (max-width: 1024px) {
   nav {
-    left: -11.5rem;
+    left: -13.5rem;
   }
 }
