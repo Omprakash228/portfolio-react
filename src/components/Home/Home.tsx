@@ -26,7 +26,6 @@ import {
   SiRedis,
   SiMongodb,
   SiNgrx,
-  SiPython,
   SiBlender,
   SiInkscape,
   SiDavinciresolve,
@@ -34,7 +33,7 @@ import {
 import type { ComponentType } from "react";
 import { VscAzure } from "react-icons/vsc";
 import { DiDatabase, DiMsqlServer } from "react-icons/di";
-import { TbBrandCpp } from "react-icons/tb";
+// import { TbBrandCpp } from "react-icons/tb";
 
 type TechItem = {
   icon?: ComponentType<{ className?: string }>;
@@ -55,7 +54,6 @@ export default function Home() {
         { icon: SiJavascript, name: "JavaScript" },
         { icon: SiSharp, name: "C#" },
         { icon: SiGo, name: "Go" },
-        { icon: TbBrandCpp, name: "C++" },
         { icon: SiGraphql, name: "GraphQL" },
       ],
     },
