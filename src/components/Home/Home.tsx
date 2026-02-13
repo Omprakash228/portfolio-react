@@ -56,7 +56,6 @@ export default function Home() {
         { icon: SiSharp, name: "C#" },
         { icon: SiGo, name: "Go" },
         { icon: TbBrandCpp, name: "C++" },
-        { icon: SiPython, name: "Python" },
         { icon: SiGraphql, name: "GraphQL" },
       ],
     },
