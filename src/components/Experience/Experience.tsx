@@ -60,9 +60,7 @@ export const Experience = () => {
       startDate: "Jul 2023",
       endDate: "Oct 2025",
       details: [
-        "• Architected a self-service questionnaire engine for Site Feasibility using Angular and .NET, eliminating manual developer intervention and reducing ServiceNow ticket volume.",
-        "• Reduced internal dashboard load times from 50s to 3s (94% improvement) through backend logic refactoring and SQL tuning.",
-        "• Managed full lifecycle from requirements to launch, using Bicep (IaC) for Azure setup and integrating Adobe Sign API.",
+        "Architected self-service questionnaire engines and internal tools using Angular and .NET on Azure. Cut dashboard load times from 50s to 3s (94%) via backend refactoring and SQL tuning; managed full lifecycle with Bicep (IaC) and Adobe Sign.",
       ],
     },
     {
@@ -74,7 +72,7 @@ export const Experience = () => {
       startDate: "Jan 2022",
       endDate: "May 2023",
       details: [
-        "• Coursework: Software Engineering, Heuristic Problem Solving, Algorithm Design and Implementation, Machine Learning, Computer Vision, Cryptography, Software Testing.",
+        "Coursework: Software Engineering, Heuristic Problem Solving, Algorithm Design and Implementation, Machine Learning, Computer Vision, Cryptography, Software Testing.",
       ],
       gpa: "4.0/4.0",
     },
@@ -87,9 +85,7 @@ export const Experience = () => {
       startDate: "July 2020",
       endDate: "December 2021",
       details: [
-        "• Built .NET Core/MassTransit microservices for PCTEL to ingest high-frequency XML telemetry via Azure Service Bus, ensuring 99.9% data persistence.",
-        "• Optimized data flow using CQRS and stream-parsing to separate high-write telemetry from analytics, maintaining sub-second dashboard latency.",
-        "• Developed GraphQL APIs and an Amazon S3 tool with resumable uploads and 2FA, improving reliability for field engineering teams.",
+        "Built .NET Core/MassTransit microservices for PCTEL ingesting high-frequency XML telemetry via Azure Service Bus (99.9% persistence). Delivered GraphQL APIs and an S3 tool with resumable uploads and 2FA for field engineering teams.",
       ],
     },
     {
@@ -101,9 +97,7 @@ export const Experience = () => {
       startDate: "July 2017",
       endDate: "May 2020",
       details: [
-        "• Developed a document-routing engine for Deloitte using Angular and .NET to automate international travel compliance for global employees.",
-        "• Achieved 4x faster load times using AOT and lazy loading while securing sensitive data through custom authorization guards.",
-        "• Mentored 10+ junior developers in Angular web standards, clean code practices, and architectural documentation.",
+        "Developed a document-routing engine for Deloitte with Angular and .NET to automate international travel compliance. Achieved 4x faster load times via AOT and lazy loading; mentored 10+ junior developers in Angular and clean code.",
       ],
     },
     {
