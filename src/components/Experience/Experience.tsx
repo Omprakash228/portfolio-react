@@ -60,7 +60,7 @@ export const Experience = () => {
       startDate: "Jul 2023",
       endDate: "Oct 2025",
       details: [
-        "Architected self-service questionnaire engines and internal tools using Angular and .NET on Azure. Cut dashboard load times from 50s to 3s (94%) via backend refactoring and SQL tuning; managed full lifecycle with Bicep (IaC) and Adobe Sign.",
+        "Architected self-service questionnaire engines and internal tools using Angular and .NET on Azure. Reduced dashboard load times from 50s to 3s (94% improvement) through backend refactoring and SQL tuning. Owned full lifecycle from requirements to launch, using Bicep for Azure infrastructure and Adobe Sign for document workflows.",
       ],
     },
     {
